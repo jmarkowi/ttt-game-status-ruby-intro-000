@@ -37,7 +37,7 @@ def full?(board)
 end
 
 def draw?(board)
-  if won?(board) == false && (board.none?{|i| i == "X" || i == "O"})
+  if won?(board) == false && (board.all?{|i| i == "X" || i == "O"})
     return true
   else
     return false

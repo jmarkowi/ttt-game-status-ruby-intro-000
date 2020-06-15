@@ -55,7 +55,7 @@ def over?(board)
 end
 
 def winner(board)
-  win_combination = win?(board)
+  win_combination = won?(board)
   token_index = win_combination[0]
   token = board[token_index]
   return token

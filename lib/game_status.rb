@@ -55,7 +55,9 @@ def over?(board)
 end
 
 def winner(board)
-  win_combination = won?(board)
-  token = board[win_combination[0]]
-  return token
+  if won?(board)
+    win_combination = won?(board)
+    token = board[win_combination[0]]
+    return token
+  end
 end

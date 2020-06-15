@@ -56,6 +56,6 @@ end
 
 def winner(board)
   win_combination = win?(board)
-  token = win_combination[0]
+  token = board[0]
   return token
 end
